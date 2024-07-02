@@ -35,7 +35,7 @@ function App() {
           <h1 className="text-slate-200 text-center text-xl sm:text-2xl col-span-1 sm:col-span-2">Today{"'"}s Highlights</h1>
           {weatherData && (
             <>
-              <Highlight title="Wind Status" value={weatherData.current.wind_mph} unit="mph" />
+              <Highlight title="Wind Status" value={weatherData.current.wind_mph} unit="mph" direction={weatherData.current.wind_dir}/>
               <Highlight title="Humidity" value={weatherData.current.humidity} unit="%" />
               <Highlight title="Pressure" value={weatherData.current.pressure_mb} unit="mb" />
               <Highlight title="Visibility" value={weatherData.current.vis_miles} unit="miles" />
