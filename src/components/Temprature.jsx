@@ -7,7 +7,7 @@ function Temprature({ setCity, weatherData }) {
 
   return (
     <>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center justify-center">
         <input
           type="text"
           className="bg-slate-600 border border-slate-500 text-slate-200 placeholder-slate-400 text-md w-60 p-2 focus:outline-none focus:border-slate-400"
