@@ -41,7 +41,7 @@ function Temprature({ setCity, weatherData }) {
         <>
           <div className="flex justify-center mt-8">
             {/* Conditionally display weather icons based on weather condition */}
-            {weatherData.current.condition.text.toLowerCase().includes("sunny") ? (
+            {weatherData.current.is_day=== 1 ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
